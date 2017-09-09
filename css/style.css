@@ -1,1 +1,22 @@
-.box { width: 100px; height: 100px; background-color: firebrick; }
+* {margin: 0; padding: 0;}
+li { list-style: none;}
+a {text-decoration: none;}
+
+.claerfix::after { content: ''; display: block; clear: both; height: 0;}
+
+header {background-color: #161b1e; position: relative;  height: 74px;}
+
+header h1 {color: white;  float: left; height: 74px; line-height: 74px; width: 200px; text-align: center; letter-spacing: 5px; font-weight: normal;}
+
+header .category { height: 36px; margin: 19px 0; float: left;}
+.category > li { float: left; position: relative;}
+.category > li > a {padding: 0 20px; height: 36px; line-height: 36px; color: white; display: block;}
+
+header .category > li:hover > a { background-color: #96da47;}
+
+.sub { background-color: #282d30; padding: 20px; position: absolute; top: 100%; left: 0; width: 500px; border-top: 1px solid #96da47; color: white;}
+.submenu { float: left; width: 25%;}
+.submenu li {}
+.submenu li a {color: gray; display: block; height: 28px; line-height: 28px; font-size: 14px;}
+.submenu li a:hover {color: #96da47;}
+.submenu li.subtitle {color: white; font-size: 16px; margin-bottom: 10px;}
