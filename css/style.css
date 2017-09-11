@@ -24,4 +24,36 @@ header .category > li:hover .sub {visibility: visible; transform: translateY(0px
 .submenu li a:hover {color: #96da47;}
 .submenu li.subtitle {color: white; font-size: 16px; margin-bottom: 10px;}
 
-.owl-item { position: relative;}
+.owl-carousel {position: relative;}
+
+.main-slider .owl-nav .owl-prev{
+	background:transparent url(../images/slider-arrow.png)no-repeat scroll 0 0;
+	display:block;
+	cursor:pointer;
+	margin:0;
+	position:absolute;
+	left:40px;
+	top:43%;
+	width:42px;
+	height:42px;
+	display:none;
+}
+
+.main-slider:hover .owl-nav .owl-prev{
+	display:block;
+}
+.main-slider .owl-nav .owl-next {
+  background: transparent url(../images/slider-arrow.png)no-repeat scroll -42px 0;
+  cursor: pointer;
+  display: block;
+  height: 42px;
+  margin: 0;
+  position: absolute;
+  right: 40px;
+  top: 43%;
+  width: 42px;
+  display:none;
+}
+.main-slider:hover .owl-nav .owl-next {
+  display:block;
+}
