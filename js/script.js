@@ -1,8 +1,14 @@
 $(document).ready(function(){
-  $(".owl-carousel").owlCarousel({
-      items : 1,
-      magin : 0,
-      roop : true,
-     
-  });
+      $(".owl-carousel").owlCarousel({
+          items : 1,
+          magin : 0,
+          center : true    
+      });
+    
+     var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 4,
+        paginationClickable: true,
+        spaceBetween: 30
+    });
 });

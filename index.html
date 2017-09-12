@@ -9,10 +9,12 @@
         <meta name="viewport" content="width=device-width, user-scalable=no">
         <title>Hanpixel</title>
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/swiper.min.css" />
         <link rel="stylesheet" href="plugin/owl.carousel.min.css">
         <link rel="stylesheet" href="plugin/owl.theme.default.min.css">
- 
+       
         <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/swiper.min.js"></script>
         <script src="plugin/owl.carousel.min.js"></script>
         <script src="js/script.js"></script>
        
@@ -48,23 +50,218 @@
                     <li><a href="#">Blogs</a></li>
                  </ul>
              </header>
-        </div>
-
-        <div class="main-slider">
-            <div class="owl-carousel  owl-theme">
-                    <div class="item">
-                        <img class="banner" src="images/main-benner-1903x738.jpg" />
-                    </div>
-                    <div class="item">    
-                        <img class="banner" src="images/main-banner-2-1903x738.jpg" />
-                    </div>
-                
+        
+        <section>
+            <div class="main-slider">
+                <div class="owl-carousel">
+                        <div class="item">
+                            <img class="banner" src="images/main-benner-1903x738.jpg" />
+                        </div>
+                        <div class="item">    
+                            <img class="banner" src="images/main-banner-2-1903x738.jpg" />
+                        </div>
+                </div>
             </div>
-            <div class="owl-buttons">
-                <div class="owl-prev"></div>
-                <div class="owl-next"></div>
-            </div>
-        </div>    
+        </section>
+            
+        <section id="dealSection">
+                <div class="deal">
+                    <div class="deal_title">Hot Deal</div>
+                    <div class="dash"></div>
+                    <div class="deal_desc">35 % Off All Orders ( Our 2015 All Product Offer )</div>
+                    <div class="deal_btn">VIEW ALL OFFERS</div>
+                </div>
+            </section>
+            
+            <section id="productView">
+                <div class="product">
+                    <div class="product_title">Latest Product</div>
+                    <div class="under_line"></div>
+<!--
+                    <div class="product_view clearfix">
+                        <div class="view_item">
+                            <div class="view_inner">
+                                <div class="image">
+                                    <div class="thumnails">
+                                        <img src="images/view01.jpg" class="dp" />
+                                        <img src="images/view02.jpg" class="motion" />
+                                    </div>
+                                    <div class="block">
+                                        <ul class="block_list">
+                                            <li>C</li>
+                                            <li>W</li>
+                                            <li class="cart">Add Cart</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="caption"></div>
+                            </div>
+                        </div>
+                        <div class="view_item">
+                            <div class="view_inner">
+                                <div class="image">
+                                    <div class="thumnails">
+                                        <img src="images/view03.jpg" class="dp" />
+                                        <img src="images/view04.jpg" class="motion" />
+                                    </div>
+                                    <div class="block">
+                                        <ul class="block_list">
+                                            <li>C</li>
+                                            <li>W</li>
+                                            <li class="cart">Add Cart</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="caption"></div>
+                            </div>
+                        </div>
+                        <div class="view_item">
+                            <div class="view_inner">
+                                <div class="image">
+                                    <div class="thumnails">
+                                        <img src="images/view05.jpg" class="dp" />
+                                        <img src="images/view06.jpg" class="motion" />
+                                    </div>
+                                    <div class="block">
+                                        <ul class="block_list">
+                                            <li>C</li>
+                                            <li>W</li>
+                                            <li class="cart">Add Cart</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="caption"></div>
+                            </div>
+                        </div>
+                        <div class="view_item">
+                            <div class="view_inner">
+                                <div class="image">
+                                    <div class="thumnails">
+                                        <img src="images/view07.jpg" class="dp" />
+                                        <img src="images/view01.jpg" class="motion" />
+                                    </div>
+                                    <div class="block">
+                                        <ul class="block_list">
+                                            <li>C</li>
+                                            <li>W</li>
+                                            <li class="cart">Add Cart</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="caption"></div>
+                            </div>
+                        </div>
+                    </div>
+-->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <div class="thumnails">
+                                        <img src="images/view03.jpg" class="dp" />
+                                        <img src="images/view02.jpg" class="motion" />
+                                    </div>
+                                    <div class="block">
+                                        <ul class="block_list">
+                                            <li>C</li>
+                                            <li>W</li>
+                                            <li class="cart">Add Cart</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="caption"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <div class="thumnails">
+                                        <img src="images/view04.jpg" class="dp" />
+                                        <img src="images/view01.jpg" class="motion" />
+                                    </div>
+                                    <div class="block">
+                                        <ul class="block_list">
+                                            <li>C</li>
+                                            <li>W</li>
+                                            <li class="cart">Add Cart</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="caption"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <div class="thumnails">
+                                        <img src="images/view07.jpg" class="dp" />
+                                        <img src="images/view02.jpg" class="motion" />
+                                    </div>
+                                    <div class="block">
+                                        <ul class="block_list">
+                                            <li>C</li>
+                                            <li>W</li>
+                                            <li class="cart">Add Cart</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="caption"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <div class="thumnails">
+                                        <img src="images/view05.jpg" class="dp" />
+                                        <img src="images/view01.jpg" class="motion" />
+                                    </div>
+                                    <div class="block">
+                                        <ul class="block_list">
+                                            <li>C</li>
+                                            <li>W</li>
+                                            <li class="cart">Add Cart</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="caption"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <div class="thumnails">
+                                        <img src="images/view06.jpg" class="dp" />
+                                        <img src="images/view02.jpg" class="motion" />
+                                    </div>
+                                    <div class="block">
+                                        <ul class="block_list">
+                                            <li>C</li>
+                                            <li>W</li>
+                                            <li class="cart">Add Cart</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="caption"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <div class="thumnails">
+                                        <img src="images/view07.jpg" class="dp" />
+                                        <img src="images/view01.jpg" class="motion" />
+                                    </div>
+                                    <div class="block">
+                                        <ul class="block_list">
+                                            <li>C</li>
+                                            <li>W</li>
+                                            <li class="cart">Add Cart</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="caption"></div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    
+                    <div class="view_nav"></div>
+                </div>
+            </section>
+        </div>        
+        
+        
     </body>
     
 </html>

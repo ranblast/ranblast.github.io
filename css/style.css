@@ -24,9 +24,9 @@ header .category > li:hover .sub {visibility: visible; transform: translateY(0px
 .submenu li a:hover {color: #96da47;}
 .submenu li.subtitle {color: white; font-size: 16px; margin-bottom: 10px;}
 
-.owl-carousel {position: relative;}
+.main-slider {position: relative; width: 100%;}
 
-.main-slider .owl-nav .owl-prev{
+/*.main-slider .owl-nav .owl-prev{
 	background:transparent url(../images/slider-arrow.png)no-repeat scroll 0 0;
 	display:block;
 	cursor:pointer;
@@ -56,4 +56,69 @@ header .category > li:hover .sub {visibility: visible; transform: translateY(0px
 }
 .main-slider:hover .owl-nav .owl-next {
   display:block;
+}*/
+
+#dealSection { padding: 40px 0; background : #96da47; }
+.deal { height:  46px; text-align: center; line-height: 46px;}
+.deal > div {display: inline-block; vertical-align: middle; }
+.deal_title { color: #fff; font-family: impact; font-size: 30px;}
+.dash {width: 40px; height: 1px; background : #222; margin: 0 10px;}
+.deal_desc { font-size: 24px;}
+.deal_btn { width: 140px; background : #fff; color: #222; font-weight: bold; margin-left: 20px; font-size: 12px; cursor: pointer;
+    position: relative;
 }
+
+/*.deal_btn::before {
+    background: #161b1e;
+    bottom: 0;
+    content: "VIEW ALL OFFERS";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scaleY(0);
+    transform-origin: 50% 100% 0;
+    transition-duration: .4s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    z-index: -1;
+}
+
+.deal_btn:hover::before, .deal_btn:focus::before, .deal_btn:active::before {
+    
+    transform: scaleY(1);
+    transition-timing-function: ease;
+}
+
+.deal_btn:hover::before, .deal_btn:focus::before {
+    color: #fff;
+}*/
+
+.deal_btn::after {
+    content:'VIEW ALL OFFERS';
+    display: block;
+    color: #fff;
+    position:absolute; top:0; left:0; right:0; bottom:0; background:#222;
+    transform:scaleY(0);
+    transform-origin:bottom;
+    transition: all .4s ease;
+}
+
+.deal_btn:hover::after { 
+    transform:scaleY(1);
+}
+
+#productView { padding: 80px 0; width: 1200px; margin: 0 auto;}
+.product_title {text-align: center; font-family: impact; font-size: 30px;}
+.thumnails {position: relative;}
+.thumnails img {display: block;}
+.thumnails .motion {position: absolute; top: 0; left: 0;}
+.image { position: relative;}
+.block { position: absolute; bottom: 0; width: 100%; padding: 3px 2px; box-sizing: border-box;}
+.block_list li { width: 40px; background: #fff; float: left; height: 40px; margin: 0 1px; text-align: center; line-height: 40px;}
+.block_list li.cart { width:calc(100% - 86px); }
+
+.block { transform: translateY(46px); transition: all .5s ease;}
+.thumnails {perspective: 500px;}
+.motion { transform: rotateY(90deg) scale(0.4); transition: all .5s ease;}
+.thumnails:hover .motion { transform: rotateY(0) scale(1);}
